@@ -1,0 +1,5 @@
+<map id="bytes_concat.hpp" name="bytes_concat.hpp">
+<area shape="rect" id="node1" title="Classes are byte concatenation algorithms for different data structures." alt="" coords="5,5,141,32"/>
+<area shape="rect" id="node2" href="$prng_8hpp.html" title="pseudorandom number generator based on a hash function" alt="" coords="34,80,113,107"/>
+<area shape="rect" id="node3" href="$blockchain_8hpp.html" title="implementation of PoW&#45;based blockchain" alt="" coords="13,155,133,181"/>
+</map>
