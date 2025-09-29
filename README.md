@@ -1,4 +1,4 @@
-# Implementation of the simplest PoW algorithm
+# Implementation of the PoW algorithm
 
 ### Installation
 
