@@ -1,0 +1,93 @@
+
+.. _file_blockchain_bytes_concat.hpp:
+
+File bytes_concat.hpp
+=====================
+
+|exhale_lsh| :ref:`Parent directory <dir_blockchain>` (``blockchain``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+
+
+Classes are byte concatenation algorithms for different data structures. 
+
+
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``blockchain/bytes_concat.hpp``)
+--------------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_blockchain_bytes_concat.hpp.rst
+
+
+
+Detailed Description
+--------------------
+
+https://github.com/gdaneek 
+
+30.05.2025 
+
+1.0-beta 
+
+
+
+
+
+
+Includes
+--------
+
+
+- ``algorithm``
+
+- ``array``
+
+- ``concepts``
+
+- ``cstdint``
+
+- ``cstring``
+
+- ``iterator``
+
+- ``type_traits``
+
+- ``utility``
+
+- ``vector``
+
+
+
+Included By
+-----------
+
+
+- :ref:`file_blockchain_prng.hpp`
+
+
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_bconcat`
+
+
+Classes
+-------
+
+
+- :ref:`exhale_class_classbconcat_1_1TrivialConcatenator`
+
+- :ref:`exhale_class_classbconcat_1_1UnifiedConcatenator`
+

@@ -1,0 +1,14 @@
+.. _exhale_variable_blockchain_8hpp_1ad0dd4ef0918482e79e657191a8567b6f:
+
+Variable m_timestamp
+====================
+
+- Defined in :ref:`file_blockchain_blockchain.hpp`
+
+
+Variable Documentation
+----------------------
+
+
+.. doxygenvariable:: m_timestamp
+   :project: My C++ Project

@@ -1,0 +1,31 @@
+.. _exhale_struct_structTestBlockchain:
+
+Template Struct TestBlockchain
+==============================
+
+- Defined in :ref:`file_blockchain_blockchain.hpp`
+
+
+Nested Relationships
+--------------------
+
+
+Nested Types
+************
+
+- :ref:`exhale_struct_structTestBlockchain_1_1Block`
+- :ref:`exhale_struct_structTestBlockchain_1_1Block_1_1Header`
+- :ref:`exhale_class_classTestBlockchain_1_1Miner`
+- :ref:`exhale_class_classTestBlockchain_1_1Transaction`
+- :ref:`exhale_class_classTestBlockchain_1_1Wallet`
+
+
+Struct Documentation
+--------------------
+
+
+.. doxygenstruct:: TestBlockchain
+   :project: My C++ Project
+   :members:
+   :protected-members:
+   :undoc-members:

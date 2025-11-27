@@ -1,0 +1,22 @@
+
+.. _namespace_bconcat:
+
+Namespace bconcat
+=================
+
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+
+
+
+
+Classes
+-------
+
+
+- :ref:`exhale_class_classbconcat_1_1TrivialConcatenator`
+
+- :ref:`exhale_class_classbconcat_1_1UnifiedConcatenator`

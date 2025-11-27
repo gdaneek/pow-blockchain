@@ -1,0 +1,17 @@
+.. _exhale_class_classbconcat_1_1UnifiedConcatenator:
+
+Class UnifiedConcatenator
+=========================
+
+- Defined in :ref:`file_blockchain_bytes_concat.hpp`
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: bconcat::UnifiedConcatenator
+   :project: My C++ Project
+   :members:
+   :protected-members:
+   :undoc-members:

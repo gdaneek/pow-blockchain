@@ -1,0 +1,434 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Template Struct TestBlockchain &mdash; pow-blockchain 1.0.0 documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="../_static/collapsible-lists/css/tree_view.css?v=a885cde7" />
+
+  
+      <script src="../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../_static/documentation_options.js?v=8d563738"></script>
+      <script src="../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js?v=73120307"></script>
+      <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js?v=660e4f45"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Struct TestBlockchain::Block" href="structTestBlockchain_1_1Block.html" />
+    <link rel="prev" title="Namespace bconcat" href="namespace_bconcat.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            pow-blockchain
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Table of contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../quick.html">Quick start</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../modules/index.html">Modules</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../examples.html">Examples</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="library_root.html">API Reference</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="library_root.html#class-hierarchy">Class Hierarchy</a></li>
+<li class="toctree-l2"><a class="reference internal" href="library_root.html#file-hierarchy">File Hierarchy</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="library_root.html#full-api">Full API</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="library_root.html#namespaces">Namespaces</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="library_root.html#classes-and-structs">Classes and Structs</a><ul class="current">
+<li class="toctree-l4 current"><a class="current reference internal" href="#">Template Struct TestBlockchain</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structTestBlockchain_1_1Block.html">Struct TestBlockchain::Block</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structTestBlockchain_1_1Block_1_1Header.html">Struct Block::Header</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classbconcat_1_1TrivialConcatenator.html">Class TrivialConcatenator</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classbconcat_1_1UnifiedConcatenator.html">Class UnifiedConcatenator</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classHashRNG.html">Template Class HashRNG</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classTestBlockchain_1_1Miner.html">Class TestBlockchain::Miner</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classTestBlockchain_1_1Transaction.html">Class TestBlockchain::Transaction</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classTestBlockchain_1_1Wallet.html">Class TestBlockchain::Wallet</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="library_root.html#functions">Functions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="library_root.html#variables">Variables</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">pow-blockchain</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="library_root.html">API Reference</a></li>
+      <li class="breadcrumb-item active">Template Struct TestBlockchain</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/api/structTestBlockchain.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="template-struct-testblockchain">
+<span id="exhale-struct-structtestblockchain"></span><h1>Template Struct TestBlockchain<a class="headerlink" href="#template-struct-testblockchain" title="Link to this heading"></a></h1>
+<ul class="simple">
+<li><p>Defined in <a class="reference internal" href="file_blockchain_blockchain.hpp.html#file-blockchain-blockchain-hpp"><span class="std std-ref">File blockchain.hpp</span></a></p></li>
+</ul>
+<section id="nested-relationships">
+<h2>Nested Relationships<a class="headerlink" href="#nested-relationships" title="Link to this heading"></a></h2>
+<section id="nested-types">
+<h3>Nested Types<a class="headerlink" href="#nested-types" title="Link to this heading"></a></h3>
+<ul class="simple">
+<li><p><a class="reference internal" href="structTestBlockchain_1_1Block.html#exhale-struct-structtestblockchain-1-1block"><span class="std std-ref">Struct TestBlockchain::Block</span></a></p></li>
+<li><p><a class="reference internal" href="structTestBlockchain_1_1Block_1_1Header.html#exhale-struct-structtestblockchain-1-1block-1-1header"><span class="std std-ref">Struct Block::Header</span></a></p></li>
+<li><p><a class="reference internal" href="classTestBlockchain_1_1Miner.html#exhale-class-classtestblockchain-1-1miner"><span class="std std-ref">Class TestBlockchain::Miner</span></a></p></li>
+<li><p><a class="reference internal" href="classTestBlockchain_1_1Transaction.html#exhale-class-classtestblockchain-1-1transaction"><span class="std std-ref">Class TestBlockchain::Transaction</span></a></p></li>
+<li><p><a class="reference internal" href="classTestBlockchain_1_1Wallet.html#exhale-class-classtestblockchain-1-1wallet"><span class="std std-ref">Class TestBlockchain::Wallet</span></a></p></li>
+</ul>
+</section>
+</section>
+<section id="struct-documentation">
+<h2>Struct Documentation<a class="headerlink" href="#struct-documentation" title="Link to this heading"></a></h2>
+<dl class="cpp struct">
+<dt class="sig sig-object cpp" id="_CPPv4I00E14TestBlockchain">
+<span id="_CPPv3I00E14TestBlockchain"></span><span id="_CPPv2I00E14TestBlockchain"></span><span class="k"><span class="pre">template</span></span><span class="p"><span class="pre">&lt;</span></span><span class="k"><span class="pre">typename</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">Hasher</span></span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="k"><span class="pre">typename</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">Hash</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv4I00E14TestBlockchain" title="TestBlockchain::Hasher"><span class="n"><span class="pre">Hasher</span></span></a><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">value_type</span></span><span class="p"><span class="pre">&gt;</span></span><br /><span class="target" id="structTestBlockchain"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">TestBlockchain</span></span></span><a class="headerlink" href="#_CPPv4I00E14TestBlockchain" title="Link to this definition"></a><br /></dt>
+<dd><p>test blockchain version to study PoW mining </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-types">Public Types</p>
+<dl class="cpp type">
+<dt class="sig sig-object cpp" id="_CPPv4N14TestBlockchain3RNGE">
+<span id="_CPPv3N14TestBlockchain3RNGE"></span><span id="_CPPv2N14TestBlockchain3RNGE"></span><span class="target" id="structTestBlockchain_1a6d59c731ec83ddb81190d3134d3417f8"></span><span class="k"><span class="pre">using</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">RNG</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><a class="reference internal" href="classHashRNG.html#_CPPv4I000E7HashRNG" title="HashRNG"><span class="n"><span class="pre">HashRNG</span></span></a><span class="p"><span class="pre">&lt;</span></span><a class="reference internal" href="#_CPPv4I00E14TestBlockchain" title="TestBlockchain::Hasher"><span class="n"><span class="pre">Hasher</span></span></a><span class="p"><span class="pre">&gt;</span></span><a class="headerlink" href="#_CPPv4N14TestBlockchain3RNGE" title="Link to this definition"></a><br /></dt>
+<dd><p>use <a class="reference internal" href="classHashRNG.html#classHashRNG"><span class="std std-ref">HashRNG</span></a> as default RNG </p>
+</dd></dl>
+
+<dl class="cpp type">
+<dt class="sig sig-object cpp" id="_CPPv4N14TestBlockchain6SignerE">
+<span id="_CPPv3N14TestBlockchain6SignerE"></span><span id="_CPPv2N14TestBlockchain6SignerE"></span><span class="target" id="structTestBlockchain_1adb7857ae00802d52a677862d87578832"></span><span class="k"><span class="pre">using</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">Signer</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="n"><span class="pre">schnorr</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">SchnorrKPS</span></span><span class="p"><span class="pre">&lt;</span></span><a class="reference internal" href="#_CPPv4N14TestBlockchain3RNGE" title="TestBlockchain::RNG"><span class="n"><span class="pre">RNG</span></span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv4I00E14TestBlockchain" title="TestBlockchain::Hasher"><span class="n"><span class="pre">Hasher</span></span></a><span class="p"><span class="pre">&gt;</span></span><a class="headerlink" href="#_CPPv4N14TestBlockchain6SignerE" title="Link to this definition"></a><br /></dt>
+<dd><p>use Schnorr key-prefixed as default signer </p>
+</dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-functions">Public Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N14TestBlockchain14TestBlockchainEv">
+<span id="_CPPv3N14TestBlockchain14TestBlockchainEv"></span><span id="_CPPv2N14TestBlockchain14TestBlockchainEv"></span><span id="TestBlockchain::TestBlockchain"></span><span class="target" id="structTestBlockchain_1ace084fe822916a86711d5aa5e2fcea45"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">TestBlockchain</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N14TestBlockchain14TestBlockchainEv" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N14TestBlockchain7genesisEv">
+<span id="_CPPv3N14TestBlockchain7genesisEv"></span><span id="_CPPv2N14TestBlockchain7genesisEv"></span><span id="TestBlockchain::genesis"></span><span class="target" id="structTestBlockchain_1a5382e67e972c25a3940b8f43f2037b87"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv4N14TestBlockchain5BlockE" title="TestBlockchain::Block"><span class="n"><span class="pre">Block</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="sig-name descname"><span class="n"><span class="pre">genesis</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N14TestBlockchain7genesisEv" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N14TestBlockchain4lastEv">
+<span id="_CPPv3N14TestBlockchain4lastEv"></span><span id="_CPPv2N14TestBlockchain4lastEv"></span><span id="TestBlockchain::last"></span><span class="target" id="structTestBlockchain_1a6e90526b34ac76e43f9412eb8d095c8b"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv4N14TestBlockchain5BlockE" title="TestBlockchain::Block"><span class="n"><span class="pre">Block</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="sig-name descname"><span class="n"><span class="pre">last</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N14TestBlockchain4lastEv" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK14TestBlockchain18get_current_targetEv">
+<span id="_CPPv3NK14TestBlockchain18get_current_targetEv"></span><span id="_CPPv2NK14TestBlockchain18get_current_targetEv"></span><span id="TestBlockchain::get_current_targetC"></span><span class="target" id="structTestBlockchain_1ab4a89580d9358f417cbcc672925d1f42"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="n"><span class="pre">uint32_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">get_current_target</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><a class="headerlink" href="#_CPPv4NK14TestBlockchain18get_current_targetEv" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK14TestBlockchain8get_poolEv">
+<span id="_CPPv3NK14TestBlockchain8get_poolEv"></span><span id="_CPPv2NK14TestBlockchain8get_poolEv"></span><span id="TestBlockchain::get_poolC"></span><span class="target" id="structTestBlockchain_1a0c8e35fa47e4c593d3e4702f5de0980e"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="kt"><span class="pre">auto</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">get_pool</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><a class="headerlink" href="#_CPPv4NK14TestBlockchain8get_poolEv" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N14TestBlockchain6appendERK5Block">
+<span id="_CPPv3N14TestBlockchain6appendERK5Block"></span><span id="_CPPv2N14TestBlockchain6appendERK5Block"></span><span id="TestBlockchain::append__BlockCR"></span><span class="target" id="structTestBlockchain_1ad3dbe33d6a32536cbf3d811beac55727"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">append</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv4N14TestBlockchain5BlockE" title="TestBlockchain::Block"><span class="n"><span class="pre">Block</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">block</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N14TestBlockchain6appendERK5Block" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N14TestBlockchain6appendERRDaRK11Transaction">
+<span id="_CPPv3N14TestBlockchain6appendERRDaRK11Transaction"></span><span id="_CPPv2N14TestBlockchain6appendERRDaRK11Transaction"></span><span id="TestBlockchain::append__autoRR.TransactionCR"></span><span class="target" id="structTestBlockchain_1af3d9a8b62d8784290ac9295af8b830d8"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">append</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">auto</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">sender</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv4N14TestBlockchain11TransactionE" title="TestBlockchain::Transaction"><span class="n"><span class="pre">Transaction</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">txn</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N14TestBlockchain6appendERRDaRK11Transaction" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N14TestBlockchain13create_walletEv">
+<span id="_CPPv3N14TestBlockchain13create_walletEv"></span><span id="_CPPv2N14TestBlockchain13create_walletEv"></span><span id="TestBlockchain::create_wallet"></span><span class="target" id="structTestBlockchain_1a6ff62be47fa816551493ec0d3961480c"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv4N14TestBlockchain6WalletE" title="TestBlockchain::Wallet"><span class="n"><span class="pre">Wallet</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">create_wallet</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N14TestBlockchain13create_walletEv" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N14TestBlockchain12create_minerEv">
+<span id="_CPPv3N14TestBlockchain12create_minerEv"></span><span id="_CPPv2N14TestBlockchain12create_minerEv"></span><span id="TestBlockchain::create_miner"></span><span class="target" id="structTestBlockchain_1a3620e8e366854461ee0d5ad310d0cdff"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv4N14TestBlockchain5MinerE" title="TestBlockchain::Miner"><span class="n"><span class="pre">Miner</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">create_miner</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N14TestBlockchain12create_minerEv" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-members">Public Members</p>
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N14TestBlockchain6m_hashE">
+<span id="_CPPv3N14TestBlockchain6m_hashE"></span><span id="_CPPv2N14TestBlockchain6m_hashE"></span><span id="TestBlockchain::m_hash__Hasher"></span><span class="target" id="structTestBlockchain_1a09e5a5964957312c584e191aa3141158"></span><a class="reference internal" href="#_CPPv4I00E14TestBlockchain" title="TestBlockchain::Hasher"><span class="n"><span class="pre">Hasher</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">m_hash</span></span></span><a class="headerlink" href="#_CPPv4N14TestBlockchain6m_hashE" title="Link to this definition"></a><br /></dt>
+<dd><p>hash function object </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N14TestBlockchain7m_tpoolE">
+<span id="_CPPv3N14TestBlockchain7m_tpoolE"></span><span id="_CPPv2N14TestBlockchain7m_tpoolE"></span><span id="TestBlockchain::m_tpool__std::vector:Transaction:"></span><span class="target" id="structTestBlockchain_1a452be180bc7eb55f13792ac259f83d6e"></span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><a class="reference internal" href="#_CPPv4N14TestBlockchain11TransactionE" title="TestBlockchain::Transaction"><span class="n"><span class="pre">Transaction</span></span></a><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">m_tpool</span></span></span><a class="headerlink" href="#_CPPv4N14TestBlockchain7m_tpoolE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N14TestBlockchain7m_chainE">
+<span id="_CPPv3N14TestBlockchain7m_chainE"></span><span id="_CPPv2N14TestBlockchain7m_chainE"></span><span id="TestBlockchain::m_chain__std::vector:Block:"></span><span class="target" id="structTestBlockchain_1afd4a2ad6350ef91db4ffbfaea5363997"></span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><a class="reference internal" href="#_CPPv4N14TestBlockchain5BlockE" title="TestBlockchain::Block"><span class="n"><span class="pre">Block</span></span></a><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">m_chain</span></span></span><a class="headerlink" href="#_CPPv4N14TestBlockchain7m_chainE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-static-attributes">Public Static Attributes</p>
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N14TestBlockchain8rng_seedE">
+<span id="_CPPv3N14TestBlockchain8rng_seedE"></span><span id="_CPPv2N14TestBlockchain8rng_seedE"></span><span id="TestBlockchain::rng_seed__ss"></span><span class="target" id="structTestBlockchain_1a91fef9cb1a24d58ed9764f20c7bb4852"></span><span class="k"><span class="pre">static</span></span><span class="w"> </span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">rng_seed</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="s"><span class="pre">&quot;danila</span> <span class="pre">gubazov&quot;</span></span><a class="headerlink" href="#_CPPv4N14TestBlockchain8rng_seedE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N14TestBlockchain1gE">
+<span id="_CPPv3N14TestBlockchain1gE"></span><span id="_CPPv2N14TestBlockchain1gE"></span><span id="TestBlockchain::g__auto"></span><span class="target" id="structTestBlockchain_1aa9ae897b393e6fe12434d1e5a13ad1f7"></span><span class="k"><span class="pre">static</span></span><span class="w"> </span><span class="kt"><span class="pre">auto</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">g</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><code class="docutils literal notranslate"><span class="pre">mpz_class(&quot;9E96031500C8774A869582D4AFDE2127AFAD2538B4B6270A6F7C8837B50D50F20675598&quot;&quot;4A49E509304D648BE2AB5AAB18EBE2CD46AC3D8495B142AA6CE23E21C&quot;,16)</span></code><a class="headerlink" href="#_CPPv4N14TestBlockchain1gE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N14TestBlockchain1qE">
+<span id="_CPPv3N14TestBlockchain1qE"></span><span id="_CPPv2N14TestBlockchain1qE"></span><span id="TestBlockchain::q__auto"></span><span class="target" id="structTestBlockchain_1a912d97b45c4c0a9fc54eba6641f8dee1"></span><span class="k"><span class="pre">static</span></span><span class="w"> </span><span class="kt"><span class="pre">auto</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">q</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="n"><span class="pre">mpz_class</span></span><span class="p"><span class="pre">(</span></span><span class="s"><span class="pre">&quot;98915E7EC8265EDFCDA31E88F24809DDB064BDC7285DD50D7289F0AC6F49DD2D&quot;</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="m"><span class="pre">16</span></span><span class="p"><span class="pre">)</span></span><a class="headerlink" href="#_CPPv4N14TestBlockchain1qE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-friends">Friends</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N14TestBlockchainlsERNSt7ostreamERKN14TestBlockchainI6Hasher4HashE5BlockE">
+<span id="_CPPv3N14TestBlockchainlsERNSt7ostreamERKN14TestBlockchainI6Hasher4HashE5BlockE"></span><span id="_CPPv2N14TestBlockchainlsERNSt7ostreamERKN14TestBlockchainI6Hasher4HashE5BlockE"></span><span id="TestBlockchain::lshift-operator__osR.TestBlockchain:Hasher.Hash:::BlockCR"></span><span class="target" id="structTestBlockchain_1a5a86b56b840e05573d92b29bf90b6d49"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="k"><span class="pre">friend</span></span><span class="w"> </span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">ostream</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="sig-name descname"><span class="k"><span class="pre">operator</span></span><span class="o"><span class="pre">&lt;&lt;</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">ostream</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">os</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="k"><span class="pre">typename</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv4I00E14TestBlockchain" title="TestBlockchain"><span class="n"><span class="pre">TestBlockchain</span></span></a><span class="p"><span class="pre">&lt;</span></span><a class="reference internal" href="#_CPPv4I00E14TestBlockchain" title="TestBlockchain::Hasher"><span class="n"><span class="pre">Hasher</span></span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv4I00E14TestBlockchain" title="TestBlockchain::Hash"><span class="n"><span class="pre">Hash</span></span></a><span class="p"><span class="pre">&gt;</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">Block</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">block</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N14TestBlockchainlsERNSt7ostreamERKN14TestBlockchainI6Hasher4HashE5BlockE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<dl class="cpp struct">
+<dt class="sig sig-object cpp" id="_CPPv4N14TestBlockchain5BlockE">
+<span id="_CPPv3N14TestBlockchain5BlockE"></span><span id="_CPPv2N14TestBlockchain5BlockE"></span><span id="TestBlockchain::Block"></span><span class="target" id="structTestBlockchain_1_1Block"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">Block</span></span></span><a class="headerlink" href="#_CPPv4N14TestBlockchain5BlockE" title="Link to this definition"></a><br /></dt>
+<dd><p><a class="reference internal" href="#structTestBlockchain"><span class="std std-ref">TestBlockchain</span></a> block impl. </p>
+<p>raw struct with 80 bytes header + transactions vector </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-functions">Public Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp">
+<span class="target" id="structTestBlockchain_1_1Block_1ae43ce6a906cea523b967efe7870276ce"></span><span class="sig-name descname"><span class="pre">template&lt;typename</span> <span class="pre">Hasher,</span> <span class="pre">typename</span> <span class="pre">Hash</span> <span class="pre">=</span> <span class="pre">Hasher::value_type&gt;</span> <span class="pre">struct</span> <span class="pre">TestBlockchain::Block::Header</span> <span class="pre">__attribute__</span> <span class="pre">((packed))</span> <span class="pre">header</span></span></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-members">Public Members</p>
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N14TestBlockchain5Block6m_dataE">
+<span id="_CPPv3N14TestBlockchain5Block6m_dataE"></span><span id="_CPPv2N14TestBlockchain5Block6m_dataE"></span><span id="TestBlockchain::Block::m_data__std::vector:Transaction:"></span><span class="target" id="structTestBlockchain_1_1Block_1a864c2a35d472f0dab854bfbc7e5790de"></span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><a class="reference internal" href="#_CPPv4N14TestBlockchain11TransactionE" title="TestBlockchain::Transaction"><span class="n"><span class="pre">Transaction</span></span></a><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">m_data</span></span></span><a class="headerlink" href="#_CPPv4N14TestBlockchain5Block6m_dataE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<dl class="cpp struct">
+<dt class="sig sig-object cpp" id="_CPPv4N14TestBlockchain5Block6HeaderE">
+<span id="_CPPv3N14TestBlockchain5Block6HeaderE"></span><span id="_CPPv2N14TestBlockchain5Block6HeaderE"></span><span id="TestBlockchain::Block::Header"></span><span class="target" id="structTestBlockchain_1_1Block_1_1Header"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">Header</span></span></span><a class="headerlink" href="#_CPPv4N14TestBlockchain5Block6HeaderE" title="Link to this definition"></a><br /></dt>
+<dd><div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-functions">Public Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK14TestBlockchain5Block6Header4dataEv">
+<span id="_CPPv3NK14TestBlockchain5Block6Header4dataEv"></span><span id="_CPPv2NK14TestBlockchain5Block6Header4dataEv"></span><span id="TestBlockchain::Block::Header::dataC"></span><span class="target" id="structTestBlockchain_1_1Block_1_1Header_1ae1f130b32147124accf35f3c7032ab5c"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">char</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">data</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><a class="headerlink" href="#_CPPv4NK14TestBlockchain5Block6Header4dataEv" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-members">Public Members</p>
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N14TestBlockchain5Block6Header9m_versionE">
+<span id="_CPPv3N14TestBlockchain5Block6Header9m_versionE"></span><span id="_CPPv2N14TestBlockchain5Block6Header9m_versionE"></span><span id="TestBlockchain::Block::Header::m_version__uint32_t"></span><span class="target" id="structTestBlockchain_1_1Block_1_1Header_1aded9dc3b0eb3f380d59cae79f5e8fd59"></span><span class="n"><span class="pre">uint32_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">m_version</span></span></span><a class="headerlink" href="#_CPPv4N14TestBlockchain5Block6Header9m_versionE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N14TestBlockchain5Block6Header6m_prevE">
+<span id="_CPPv3N14TestBlockchain5Block6Header6m_prevE"></span><span id="_CPPv2N14TestBlockchain5Block6Header6m_prevE"></span><span id="TestBlockchain::Block::Header::m_prev__Hash"></span><span class="target" id="structTestBlockchain_1_1Block_1_1Header_1a41c59c5a67998d7ee7aabe236b090afb"></span><a class="reference internal" href="#_CPPv4I00E14TestBlockchain" title="TestBlockchain::Hash"><span class="n"><span class="pre">Hash</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">m_prev</span></span></span><a class="headerlink" href="#_CPPv4N14TestBlockchain5Block6Header6m_prevE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N14TestBlockchain5Block6Header10m_txn_rootE">
+<span id="_CPPv3N14TestBlockchain5Block6Header10m_txn_rootE"></span><span id="_CPPv2N14TestBlockchain5Block6Header10m_txn_rootE"></span><span id="TestBlockchain::Block::Header::m_txn_root__Hash"></span><span class="target" id="structTestBlockchain_1_1Block_1_1Header_1a7951ed70c777e9531923a5d2ddfeef8a"></span><a class="reference internal" href="#_CPPv4I00E14TestBlockchain" title="TestBlockchain::Hash"><span class="n"><span class="pre">Hash</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">m_txn_root</span></span></span><a class="headerlink" href="#_CPPv4N14TestBlockchain5Block6Header10m_txn_rootE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N14TestBlockchain5Block6Header11m_timestampE">
+<span id="_CPPv3N14TestBlockchain5Block6Header11m_timestampE"></span><span id="_CPPv2N14TestBlockchain5Block6Header11m_timestampE"></span><span id="TestBlockchain::Block::Header::m_timestamp__uint32_t"></span><span class="target" id="structTestBlockchain_1_1Block_1_1Header_1a422ee2d5c83634f47164a140007872d9"></span><span class="n"><span class="pre">uint32_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">m_timestamp</span></span></span><a class="headerlink" href="#_CPPv4N14TestBlockchain5Block6Header11m_timestampE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N14TestBlockchain5Block6Header8m_targetE">
+<span id="_CPPv3N14TestBlockchain5Block6Header8m_targetE"></span><span id="_CPPv2N14TestBlockchain5Block6Header8m_targetE"></span><span id="TestBlockchain::Block::Header::m_target__uint32_t"></span><span class="target" id="structTestBlockchain_1_1Block_1_1Header_1a6a650776023dd36f409aef7c49a2d0e8"></span><span class="n"><span class="pre">uint32_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">m_target</span></span></span><a class="headerlink" href="#_CPPv4N14TestBlockchain5Block6Header8m_targetE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N14TestBlockchain5Block6Header7m_nonceE">
+<span id="_CPPv3N14TestBlockchain5Block6Header7m_nonceE"></span><span id="_CPPv2N14TestBlockchain5Block6Header7m_nonceE"></span><span id="TestBlockchain::Block::Header::m_nonce__uint32_t"></span><span class="target" id="structTestBlockchain_1_1Block_1_1Header_1affae4c4b4a2cb713a2f69ac17cc1198f"></span><span class="n"><span class="pre">uint32_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">m_nonce</span></span></span><a class="headerlink" href="#_CPPv4N14TestBlockchain5Block6Header7m_nonceE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-static-functions">Public Static Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N14TestBlockchain5Block6Header4sizeEv">
+<span id="_CPPv3N14TestBlockchain5Block6Header4sizeEv"></span><span id="_CPPv2N14TestBlockchain5Block6Header4sizeEv"></span><span id="TestBlockchain::Block::Header::size"></span><span class="target" id="structTestBlockchain_1_1Block_1_1Header_1aad219371cf6ebeb3ccb2d41ea0c9ef24"></span><span class="k"><span class="pre">static</span></span><span class="w"> </span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="n"><span class="pre">size_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">size</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N14TestBlockchain5Block6Header4sizeEv" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="cpp class">
+<dt class="sig sig-object cpp" id="_CPPv4N14TestBlockchain5MinerE">
+<span id="_CPPv3N14TestBlockchain5MinerE"></span><span id="_CPPv2N14TestBlockchain5MinerE"></span><span id="TestBlockchain::Miner"></span><span class="target" id="classTestBlockchain_1_1Miner"></span><span class="k"><span class="pre">class</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">Miner</span></span></span><a class="headerlink" href="#_CPPv4N14TestBlockchain5MinerE" title="Link to this definition"></a><br /></dt>
+<dd><p><a class="reference internal" href="#structTestBlockchain"><span class="std std-ref">TestBlockchain</span></a> miner impl. </p>
+<p>only build blocks for the blockchain using PoW algorithm </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-functions">Public Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N14TestBlockchain5Miner5MinerEP14TestBlockchainI6Hasher4HashE">
+<span id="_CPPv3N14TestBlockchain5Miner5MinerEP14TestBlockchainI6Hasher4HashE"></span><span id="_CPPv2N14TestBlockchain5Miner5MinerEP14TestBlockchainI6Hasher4HashE"></span><span id="TestBlockchain::Miner::Miner__TestBlockchain:Hasher.Hash:P"></span><span class="target" id="classTestBlockchain_1_1Miner_1a431dee179ef8d09f8fee22e7f19ab2fa"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="k"><span class="pre">explicit</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">Miner</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="#_CPPv4I00E14TestBlockchain" title="TestBlockchain"><span class="n"><span class="pre">TestBlockchain</span></span></a><span class="p"><span class="pre">&lt;</span></span><a class="reference internal" href="#_CPPv4I00E14TestBlockchain" title="TestBlockchain::Hasher"><span class="n"><span class="pre">Hasher</span></span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv4I00E14TestBlockchain" title="TestBlockchain::Hash"><span class="n"><span class="pre">Hash</span></span></a><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">_b</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N14TestBlockchain5Miner5MinerEP14TestBlockchainI6Hasher4HashE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N14TestBlockchain5Miner4mineEv">
+<span id="_CPPv3N14TestBlockchain5Miner4mineEv"></span><span id="_CPPv2N14TestBlockchain5Miner4mineEv"></span><span id="TestBlockchain::Miner::mine"></span><span class="target" id="classTestBlockchain_1_1Miner_1a0c9e8619da68ebaf657efc1b89d19c42"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">mine</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N14TestBlockchain5Miner4mineEv" title="Link to this definition"></a><br /></dt>
+<dd><p>PoW mining implementation. </p>
+</dd></dl>
+
+</div>
+</dd></dl>
+
+<dl class="cpp class">
+<dt class="sig sig-object cpp" id="_CPPv4N14TestBlockchain11TransactionE">
+<span id="_CPPv3N14TestBlockchain11TransactionE"></span><span id="_CPPv2N14TestBlockchain11TransactionE"></span><span id="TestBlockchain::Transaction"></span><span class="target" id="classTestBlockchain_1_1Transaction"></span><span class="k"><span class="pre">class</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">Transaction</span></span></span><a class="headerlink" href="#_CPPv4N14TestBlockchain11TransactionE" title="Link to this definition"></a><br /></dt>
+<dd><p><a class="reference internal" href="#structTestBlockchain"><span class="std std-ref">TestBlockchain</span></a> transaction impl. </p>
+<p>signed vector of bytes </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-functions">Public Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4IDpEN14TestBlockchain11Transaction11TransactionEN7schnorr11signature_tEDpRR4Args">
+<span id="_CPPv3IDpEN14TestBlockchain11Transaction11TransactionEN7schnorr11signature_tEDpRR4Args"></span><span id="_CPPv2IDpEN14TestBlockchain11Transaction11TransactionEN7schnorr11signature_tEDpRR4Args"></span><span class="k"><span class="pre">template</span></span><span class="p"><span class="pre">&lt;</span></span><span class="k"><span class="pre">typename</span></span><span class="w"> </span><span class="p"><span class="pre">...</span></span><span class="sig-name descname"><span class="n"><span class="pre">Args</span></span></span><span class="p"><span class="pre">&gt;</span></span><br /><span class="target" id="classTestBlockchain_1_1Transaction_1af5ec0cee61e80b6c320a86da94ba4986"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">Transaction</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">schnorr</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">signature_t</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">sign</span></span>, <a class="reference internal" href="#_CPPv4IDpEN14TestBlockchain11Transaction11TransactionEN7schnorr11signature_tEDpRR4Args" title="TestBlockchain::Transaction::Transaction::Args"><span class="n"><span class="pre">Args</span></span></a><span class="p"><span class="pre">&amp;</span></span><span class="p"><span class="pre">&amp;</span></span><span class="p"><span class="pre">...</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">args</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4IDpEN14TestBlockchain11Transaction11TransactionEN7schnorr11signature_tEDpRR4Args" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK14TestBlockchain11Transaction8get_signEv">
+<span id="_CPPv3NK14TestBlockchain11Transaction8get_signEv"></span><span id="_CPPv2NK14TestBlockchain11Transaction8get_signEv"></span><span id="TestBlockchain::Transaction::get_signC"></span><span class="target" id="classTestBlockchain_1_1Transaction_1a5455e940444c0501a6e89863df426e8a"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="n"><span class="pre">schnorr</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">signature_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">get_sign</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><a class="headerlink" href="#_CPPv4NK14TestBlockchain11Transaction8get_signEv" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N14TestBlockchain11Transaction5bytesEv">
+<span id="_CPPv3N14TestBlockchain11Transaction5bytesEv"></span><span id="_CPPv2N14TestBlockchain11Transaction5bytesEv"></span><span id="TestBlockchain::Transaction::bytes"></span><span class="target" id="classTestBlockchain_1_1Transaction_1a5df74c06a155240e6de1e460dcc4627b"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="kt"><span class="pre">auto</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="sig-name descname"><span class="n"><span class="pre">bytes</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N14TestBlockchain11Transaction5bytesEv" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK14TestBlockchain11Transaction5bytesEv">
+<span id="_CPPv3NK14TestBlockchain11Transaction5bytesEv"></span><span id="_CPPv2NK14TestBlockchain11Transaction5bytesEv"></span><span id="TestBlockchain::Transaction::bytesC"></span><span class="target" id="classTestBlockchain_1_1Transaction_1a60c3a7fcdf097c4d094ffee6067a4f42"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">auto</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="sig-name descname"><span class="n"><span class="pre">bytes</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><a class="headerlink" href="#_CPPv4NK14TestBlockchain11Transaction5bytesEv" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N14TestBlockchain11Transaction5beginEv">
+<span id="_CPPv3N14TestBlockchain11Transaction5beginEv"></span><span id="_CPPv2N14TestBlockchain11Transaction5beginEv"></span><span id="TestBlockchain::Transaction::begin"></span><span class="target" id="classTestBlockchain_1_1Transaction_1ac12eca1824c67c450cf99b6e5d994ef5"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="kt"><span class="pre">auto</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">begin</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N14TestBlockchain11Transaction5beginEv" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N14TestBlockchain11Transaction3endEv">
+<span id="_CPPv3N14TestBlockchain11Transaction3endEv"></span><span id="_CPPv2N14TestBlockchain11Transaction3endEv"></span><span id="TestBlockchain::Transaction::end"></span><span class="target" id="classTestBlockchain_1_1Transaction_1acbdf28ccf69c29760ba637009e6b1c24"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="kt"><span class="pre">auto</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">end</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N14TestBlockchain11Transaction3endEv" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+<dl class="cpp class">
+<dt class="sig sig-object cpp" id="_CPPv4N14TestBlockchain6WalletE">
+<span id="_CPPv3N14TestBlockchain6WalletE"></span><span id="_CPPv2N14TestBlockchain6WalletE"></span><span id="TestBlockchain::Wallet"></span><span class="target" id="classTestBlockchain_1_1Wallet"></span><span class="k"><span class="pre">class</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">Wallet</span></span></span><a class="headerlink" href="#_CPPv4N14TestBlockchain6WalletE" title="Link to this definition"></a><br /></dt>
+<dd><p><a class="reference internal" href="#structTestBlockchain"><span class="std std-ref">TestBlockchain</span></a> wallet impl. </p>
+<p>only signs and sends transactions represented by files to the blockchain </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-functions">Public Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N14TestBlockchain6Wallet6WalletEP14TestBlockchainI6Hasher4HashE6Signer">
+<span id="_CPPv3N14TestBlockchain6Wallet6WalletEP14TestBlockchainI6Hasher4HashE6Signer"></span><span id="_CPPv2N14TestBlockchain6Wallet6WalletEP14TestBlockchainI6Hasher4HashE6Signer"></span><span id="TestBlockchain::Wallet::Wallet__TestBlockchain:Hasher.Hash:P.Signer"></span><span class="target" id="classTestBlockchain_1_1Wallet_1ae9389a498bdd30886dfa7725584c3624"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="k"><span class="pre">explicit</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">Wallet</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="#_CPPv4I00E14TestBlockchain" title="TestBlockchain"><span class="n"><span class="pre">TestBlockchain</span></span></a><span class="p"><span class="pre">&lt;</span></span><a class="reference internal" href="#_CPPv4I00E14TestBlockchain" title="TestBlockchain::Hasher"><span class="n"><span class="pre">Hasher</span></span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv4I00E14TestBlockchain" title="TestBlockchain::Hash"><span class="n"><span class="pre">Hash</span></span></a><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">_b</span></span>, <a class="reference internal" href="#_CPPv4N14TestBlockchain6SignerE" title="TestBlockchain::Signer"><span class="n"><span class="pre">Signer</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">_s</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv4N14TestBlockchain6SignerE" title="TestBlockchain::Signer"><span class="n"><span class="pre">Signer</span></span></a><span class="p"><span class="pre">{</span></span><span class="p"><span class="pre">}</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N14TestBlockchain6Wallet6WalletEP14TestBlockchainI6Hasher4HashE6Signer" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK14TestBlockchain6Wallet7addressEv">
+<span id="_CPPv3NK14TestBlockchain6Wallet7addressEv"></span><span id="_CPPv2NK14TestBlockchain6Wallet7addressEv"></span><span id="TestBlockchain::Wallet::addressC"></span><span class="target" id="classTestBlockchain_1_1Wallet_1a0d4876b0737d3070e47b489089d4dbc8"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="kt"><span class="pre">auto</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">address</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><a class="headerlink" href="#_CPPv4NK14TestBlockchain6Wallet7addressEv" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N14TestBlockchain6Wallet4sendERKNSt6stringE">
+<span id="_CPPv3N14TestBlockchain6Wallet4sendERKNSt6stringE"></span><span id="_CPPv2N14TestBlockchain6Wallet4sendERKNSt6stringE"></span><span id="TestBlockchain::Wallet::send__ssCR"></span><span class="target" id="classTestBlockchain_1_1Wallet_1a7be1cc2ccaabbc0a44eec4165554d858"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="kt"><span class="pre">auto</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">send</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">filename</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N14TestBlockchain6Wallet4sendERKNSt6stringE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="namespace_bconcat.html" class="btn btn-neutral float-left" title="Namespace bconcat" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="structTestBlockchain_1_1Block.html" class="btn btn-neutral float-right" title="Struct TestBlockchain::Block" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2025, gdaneek.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

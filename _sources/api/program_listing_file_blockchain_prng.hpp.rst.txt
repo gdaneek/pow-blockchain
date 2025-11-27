@@ -1,0 +1,43 @@
+
+.. _program_listing_file_blockchain_prng.hpp:
+
+Program Listing for File prng.hpp
+=================================
+
+|exhale_lsh| :ref:`Return to documentation for file <file_blockchain_prng.hpp>` (``blockchain/prng.hpp``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. code-block:: cpp
+
+   
+   #pragma once
+   
+   #include "bytes_concat.hpp"
+   
+   template <typename Hasher, typename Hash = Hasher::value_type,
+             typename Concatenator = bconcat::TrivialConcatenator>
+   class HashRNG {
+       Hasher m_hash;          
+       Concatenator m_concat;  
+   
+       Hash m_state;        
+       uint64_t m_counter;  
+   
+      public:
+       HashRNG() = default;
+   
+       explicit HashRNG(const std::string& seed, Hasher _hash = Hasher{},
+                        Concatenator _c = Concatenator{})
+           : m_hash{_hash}, m_concat{_c}, m_counter{} {
+           m_state = m_hash(seed);
+       }
+   
+       Hash next() {
+           return (m_state = m_hash(m_concat(m_state, ++m_counter)));
+       }
+   
+       auto operator()() {
+           return this->next();
+       }
+   };

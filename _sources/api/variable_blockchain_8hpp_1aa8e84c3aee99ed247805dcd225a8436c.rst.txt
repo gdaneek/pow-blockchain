@@ -1,0 +1,14 @@
+.. _exhale_variable_blockchain_8hpp_1aa8e84c3aee99ed247805dcd225a8436c:
+
+Variable m_prev
+===============
+
+- Defined in :ref:`file_blockchain_blockchain.hpp`
+
+
+Variable Documentation
+----------------------
+
+
+.. doxygenvariable:: m_prev
+   :project: My C++ Project

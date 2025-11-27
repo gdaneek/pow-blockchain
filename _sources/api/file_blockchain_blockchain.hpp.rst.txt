@@ -1,0 +1,114 @@
+
+.. _file_blockchain_blockchain.hpp:
+
+File blockchain.hpp
+===================
+
+|exhale_lsh| :ref:`Parent directory <dir_blockchain>` (``blockchain``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+
+
+implementation of PoW-based blockchain 
+
+
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``blockchain/blockchain.hpp``)
+------------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_blockchain_blockchain.hpp.rst
+
+
+
+Detailed Description
+--------------------
+
+https://github.com/gdaneek 
+
+30.05.2025 
+
+1.0 
+
+
+
+
+
+
+Includes
+--------
+
+
+- ``algorithm``
+
+- ``fstream``
+
+- ``inttypes.h``
+
+- ``iostream``
+
+- ``merkle.hpp``
+
+- ``prng.hpp`` (:ref:`file_blockchain_prng.hpp`)
+
+- ``schnorr.hpp``
+
+- ``vector``
+
+
+
+
+
+
+Classes
+-------
+
+
+- :ref:`exhale_struct_structTestBlockchain`
+
+- :ref:`exhale_struct_structTestBlockchain_1_1Block`
+
+- :ref:`exhale_struct_structTestBlockchain_1_1Block_1_1Header`
+
+- :ref:`exhale_class_classTestBlockchain_1_1Miner`
+
+- :ref:`exhale_class_classTestBlockchain_1_1Transaction`
+
+- :ref:`exhale_class_classTestBlockchain_1_1Wallet`
+
+
+Functions
+---------
+
+
+- :ref:`exhale_function_blockchain_8hpp_1a8c002417c93269398765c264333ea23c`
+
+- :ref:`exhale_function_blockchain_8hpp_1a2c7ad6354fdf518deece60214b2f7be7`
+
+- :ref:`exhale_function_blockchain_8hpp_1a3afc276b4d98c2c32e7c376b58578ad8`
+
+
+Variables
+---------
+
+
+- :ref:`exhale_variable_blockchain_8hpp_1ac39898772839ccf08db26826bf2287dd`
+
+- :ref:`exhale_variable_blockchain_8hpp_1aa8e84c3aee99ed247805dcd225a8436c`
+
+- :ref:`exhale_variable_blockchain_8hpp_1a34a82969482f4a35e7ed83731cd33cfb`
+
+- :ref:`exhale_variable_blockchain_8hpp_1ad0dd4ef0918482e79e657191a8567b6f`
+
+- :ref:`exhale_variable_blockchain_8hpp_1a068a2f13d61dc01ca0d90e3f5d37b465`
+
+- :ref:`exhale_variable_blockchain_8hpp_1a0d6124b18fa39209bf51ec6407fa7c0f`
+

@@ -1,0 +1,23 @@
+.. _exhale_struct_structTestBlockchain_1_1Block_1_1Header:
+
+Struct Block::Header
+====================
+
+- Defined in :ref:`file_blockchain_blockchain.hpp`
+
+
+Nested Relationships
+--------------------
+
+This struct is a nested type of :ref:`exhale_struct_structTestBlockchain_1_1Block`.
+
+
+Struct Documentation
+--------------------
+
+
+.. doxygenstruct:: TestBlockchain::Block::Header
+   :project: My C++ Project
+   :members:
+   :protected-members:
+   :undoc-members:

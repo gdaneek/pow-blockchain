@@ -1,0 +1,14 @@
+.. _exhale_variable_blockchain_8hpp_1ac39898772839ccf08db26826bf2287dd:
+
+Variable m_nonce
+================
+
+- Defined in :ref:`file_blockchain_blockchain.hpp`
+
+
+Variable Documentation
+----------------------
+
+
+.. doxygenvariable:: m_nonce
+   :project: My C++ Project

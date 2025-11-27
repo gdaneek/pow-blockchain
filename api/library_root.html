@@ -1,0 +1,500 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>API Reference &mdash; pow-blockchain 1.0.0 documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="../_static/collapsible-lists/css/tree_view.css?v=a885cde7" />
+
+  
+      <script src="../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../_static/documentation_options.js?v=8d563738"></script>
+      <script src="../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js?v=73120307"></script>
+      <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js?v=660e4f45"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Namespace bconcat" href="namespace_bconcat.html" />
+    <link rel="prev" title="Proof-of-Work Example" href="../examples.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            pow-blockchain
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Table of contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../quick.html">Quick start</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../modules/index.html">Modules</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../examples.html">Examples</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">API Reference</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#class-hierarchy">Class Hierarchy</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#file-hierarchy">File Hierarchy</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#full-api">Full API</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#namespaces">Namespaces</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="namespace_bconcat.html">Namespace bconcat</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#classes-and-structs">Classes and Structs</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="structTestBlockchain.html">Template Struct TestBlockchain</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structTestBlockchain_1_1Block.html">Struct TestBlockchain::Block</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structTestBlockchain_1_1Block_1_1Header.html">Struct Block::Header</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classbconcat_1_1TrivialConcatenator.html">Class TrivialConcatenator</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classbconcat_1_1UnifiedConcatenator.html">Class UnifiedConcatenator</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classHashRNG.html">Template Class HashRNG</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classTestBlockchain_1_1Miner.html">Class TestBlockchain::Miner</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classTestBlockchain_1_1Transaction.html">Class TestBlockchain::Transaction</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classTestBlockchain_1_1Wallet.html">Class TestBlockchain::Wallet</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#functions">Functions</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="function_blockchain_8hpp_1a8c002417c93269398765c264333ea23c.html">Function data</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_blockchain_8hpp_1a2c7ad6354fdf518deece60214b2f7be7.html">Template Function operator&lt;&lt;</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_blockchain_8hpp_1a3afc276b4d98c2c32e7c376b58578ad8.html">Function size</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#variables">Variables</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="variable_blockchain_8hpp_1ac39898772839ccf08db26826bf2287dd.html">Variable m_nonce</a></li>
+<li class="toctree-l4"><a class="reference internal" href="variable_blockchain_8hpp_1aa8e84c3aee99ed247805dcd225a8436c.html">Variable m_prev</a></li>
+<li class="toctree-l4"><a class="reference internal" href="variable_blockchain_8hpp_1a34a82969482f4a35e7ed83731cd33cfb.html">Variable m_target</a></li>
+<li class="toctree-l4"><a class="reference internal" href="variable_blockchain_8hpp_1ad0dd4ef0918482e79e657191a8567b6f.html">Variable m_timestamp</a></li>
+<li class="toctree-l4"><a class="reference internal" href="variable_blockchain_8hpp_1a068a2f13d61dc01ca0d90e3f5d37b465.html">Variable m_txn_root</a></li>
+<li class="toctree-l4"><a class="reference internal" href="variable_blockchain_8hpp_1a0d6124b18fa39209bf51ec6407fa7c0f.html">Variable m_version</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">pow-blockchain</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">API Reference</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/api/library_root.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="api-reference">
+<h1>API Reference<a class="headerlink" href="#api-reference" title="Link to this heading"></a></h1>
+<section id="class-hierarchy">
+<h2>Class Hierarchy<a class="headerlink" href="#class-hierarchy" title="Link to this heading"></a></h2>
+<ul class="treeView" id="class-treeView">
+  <li>
+    <ul class="collapsibleList">
+      <li>Namespace <a href="namespace_bconcat.html#namespace-bconcat">bconcat</a><ul><li>Class <a href="classbconcat_1_1TrivialConcatenator.html#exhale-class-classbconcat-1-1TrivialConcatenator">TrivialConcatenator</a></li><li class="lastChild">Class <a href="classbconcat_1_1UnifiedConcatenator.html#exhale-class-classbconcat-1-1UnifiedConcatenator">UnifiedConcatenator</a></li></ul></li><li>Template Struct <a href="structTestBlockchain.html#exhale-struct-structTestBlockchain">TestBlockchain</a><ul><li>Struct <a href="structTestBlockchain_1_1Block.html#exhale-struct-structTestBlockchain-1-1Block">TestBlockchain::Block</a><ul><li class="lastChild">Struct <a href="structTestBlockchain_1_1Block_1_1Header.html#exhale-struct-structTestBlockchain-1-1Block-1-1Header">Block::Header</a></li></ul></li><li>Class <a href="classTestBlockchain_1_1Miner.html#exhale-class-classTestBlockchain-1-1Miner">TestBlockchain::Miner</a></li><li>Class <a href="classTestBlockchain_1_1Transaction.html#exhale-class-classTestBlockchain-1-1Transaction">TestBlockchain::Transaction</a></li><li class="lastChild">Class <a href="classTestBlockchain_1_1Wallet.html#exhale-class-classTestBlockchain-1-1Wallet">TestBlockchain::Wallet</a></li></ul></li><li class="lastChild">Template Class <a href="classHashRNG.html#exhale-class-classHashRNG">HashRNG</a></li>
+    </ul>
+  </li><!-- only tree view element -->
+</ul><!-- /treeView class-treeView --></section>
+<section id="file-hierarchy">
+<h2>File Hierarchy<a class="headerlink" href="#file-hierarchy" title="Link to this heading"></a></h2>
+<ul class="treeView" id="file-treeView">
+  <li>
+    <ul class="collapsibleList">
+      <li class="lastChild">Directory <a href="dir_blockchain.html#dir-blockchain">blockchain</a><ul><li>File <a href="file_blockchain_blockchain.hpp.html#file-blockchain-blockchain.hpp">blockchain.hpp</a></li><li>File <a href="file_blockchain_bytes_concat.hpp.html#file-blockchain-bytes-concat.hpp">bytes_concat.hpp</a></li><li class="lastChild">File <a href="file_blockchain_prng.hpp.html#file-blockchain-prng.hpp">prng.hpp</a></li></ul></li>
+    </ul>
+  </li><!-- only tree view element -->
+</ul><!-- /treeView file-treeView --></section>
+<section id="full-api">
+<h2>Full API<a class="headerlink" href="#full-api" title="Link to this heading"></a></h2>
+<section id="namespaces">
+<h3>Namespaces<a class="headerlink" href="#namespaces" title="Link to this heading"></a></h3>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="namespace_bconcat.html">Namespace bconcat</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="namespace_bconcat.html#classes">Classes</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</section>
+<section id="classes-and-structs">
+<h3>Classes and Structs<a class="headerlink" href="#classes-and-structs" title="Link to this heading"></a></h3>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="structTestBlockchain.html">Template Struct TestBlockchain</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="structTestBlockchain.html#nested-relationships">Nested Relationships</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="structTestBlockchain.html#nested-types">Nested Types</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="structTestBlockchain.html#struct-documentation">Struct Documentation</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="structTestBlockchain.html#_CPPv4I00E14TestBlockchain"><code class="docutils literal notranslate"><span class="pre">TestBlockchain</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="structTestBlockchain.html#_CPPv4N14TestBlockchain3RNGE"><code class="docutils literal notranslate"><span class="pre">RNG</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="structTestBlockchain.html#_CPPv4N14TestBlockchain6SignerE"><code class="docutils literal notranslate"><span class="pre">Signer</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="structTestBlockchain.html#_CPPv4N14TestBlockchain14TestBlockchainEv"><code class="docutils literal notranslate"><span class="pre">TestBlockchain()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="structTestBlockchain.html#_CPPv4N14TestBlockchain7genesisEv"><code class="docutils literal notranslate"><span class="pre">genesis()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="structTestBlockchain.html#_CPPv4N14TestBlockchain4lastEv"><code class="docutils literal notranslate"><span class="pre">last()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="structTestBlockchain.html#_CPPv4NK14TestBlockchain18get_current_targetEv"><code class="docutils literal notranslate"><span class="pre">get_current_target()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="structTestBlockchain.html#_CPPv4NK14TestBlockchain8get_poolEv"><code class="docutils literal notranslate"><span class="pre">get_pool()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="structTestBlockchain.html#_CPPv4N14TestBlockchain6appendERK5Block"><code class="docutils literal notranslate"><span class="pre">append()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="structTestBlockchain.html#_CPPv4N14TestBlockchain6appendERRDaRK11Transaction"><code class="docutils literal notranslate"><span class="pre">append()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="structTestBlockchain.html#_CPPv4N14TestBlockchain13create_walletEv"><code class="docutils literal notranslate"><span class="pre">create_wallet()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="structTestBlockchain.html#_CPPv4N14TestBlockchain12create_minerEv"><code class="docutils literal notranslate"><span class="pre">create_miner()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="structTestBlockchain.html#_CPPv4N14TestBlockchain6m_hashE"><code class="docutils literal notranslate"><span class="pre">m_hash</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="structTestBlockchain.html#_CPPv4N14TestBlockchain7m_tpoolE"><code class="docutils literal notranslate"><span class="pre">m_tpool</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="structTestBlockchain.html#_CPPv4N14TestBlockchain7m_chainE"><code class="docutils literal notranslate"><span class="pre">m_chain</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="structTestBlockchain.html#_CPPv4N14TestBlockchain8rng_seedE"><code class="docutils literal notranslate"><span class="pre">rng_seed</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="structTestBlockchain.html#_CPPv4N14TestBlockchain1gE"><code class="docutils literal notranslate"><span class="pre">g</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="structTestBlockchain.html#_CPPv4N14TestBlockchain1qE"><code class="docutils literal notranslate"><span class="pre">q</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="structTestBlockchain.html#_CPPv4N14TestBlockchainlsERNSt7ostreamERKN14TestBlockchainI6Hasher4HashE5BlockE"><code class="docutils literal notranslate"><span class="pre">operator&lt;&lt;</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="structTestBlockchain.html#_CPPv4N14TestBlockchain5BlockE"><code class="docutils literal notranslate"><span class="pre">TestBlockchain::Block</span></code></a><ul>
+<li class="toctree-l5"><a class="reference internal" href="structTestBlockchain.html#_CPPv4N14TestBlockchain5Block6m_dataE"><code class="docutils literal notranslate"><span class="pre">m_data</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="structTestBlockchain.html#_CPPv4N14TestBlockchain5Block6HeaderE"><code class="docutils literal notranslate"><span class="pre">TestBlockchain::Block::Header</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="structTestBlockchain.html#_CPPv4N14TestBlockchain5MinerE"><code class="docutils literal notranslate"><span class="pre">TestBlockchain::Miner</span></code></a><ul>
+<li class="toctree-l5"><a class="reference internal" href="structTestBlockchain.html#_CPPv4N14TestBlockchain5Miner5MinerEP14TestBlockchainI6Hasher4HashE"><code class="docutils literal notranslate"><span class="pre">Miner()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="structTestBlockchain.html#_CPPv4N14TestBlockchain5Miner4mineEv"><code class="docutils literal notranslate"><span class="pre">mine()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="structTestBlockchain.html#_CPPv4N14TestBlockchain11TransactionE"><code class="docutils literal notranslate"><span class="pre">TestBlockchain::Transaction</span></code></a><ul>
+<li class="toctree-l5"><a class="reference internal" href="structTestBlockchain.html#_CPPv4IDpEN14TestBlockchain11Transaction11TransactionEN7schnorr11signature_tEDpRR4Args"><code class="docutils literal notranslate"><span class="pre">Transaction()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="structTestBlockchain.html#_CPPv4NK14TestBlockchain11Transaction8get_signEv"><code class="docutils literal notranslate"><span class="pre">get_sign()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="structTestBlockchain.html#_CPPv4N14TestBlockchain11Transaction5bytesEv"><code class="docutils literal notranslate"><span class="pre">bytes()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="structTestBlockchain.html#_CPPv4NK14TestBlockchain11Transaction5bytesEv"><code class="docutils literal notranslate"><span class="pre">bytes()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="structTestBlockchain.html#_CPPv4N14TestBlockchain11Transaction5beginEv"><code class="docutils literal notranslate"><span class="pre">begin()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="structTestBlockchain.html#_CPPv4N14TestBlockchain11Transaction3endEv"><code class="docutils literal notranslate"><span class="pre">end()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="structTestBlockchain.html#_CPPv4N14TestBlockchain6WalletE"><code class="docutils literal notranslate"><span class="pre">TestBlockchain::Wallet</span></code></a><ul>
+<li class="toctree-l5"><a class="reference internal" href="structTestBlockchain.html#_CPPv4N14TestBlockchain6Wallet6WalletEP14TestBlockchainI6Hasher4HashE6Signer"><code class="docutils literal notranslate"><span class="pre">Wallet()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="structTestBlockchain.html#_CPPv4NK14TestBlockchain6Wallet7addressEv"><code class="docutils literal notranslate"><span class="pre">address()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="structTestBlockchain.html#_CPPv4N14TestBlockchain6Wallet4sendERKNSt6stringE"><code class="docutils literal notranslate"><span class="pre">send()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="structTestBlockchain_1_1Block.html">Struct TestBlockchain::Block</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="structTestBlockchain_1_1Block.html#nested-relationships">Nested Relationships</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="structTestBlockchain_1_1Block.html#nested-types">Nested Types</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="structTestBlockchain_1_1Block.html#struct-documentation">Struct Documentation</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="structTestBlockchain_1_1Block.html#_CPPv4N14TestBlockchain5BlockE"><code class="docutils literal notranslate"><span class="pre">TestBlockchain::Block</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="structTestBlockchain_1_1Block.html#_CPPv4N14TestBlockchain5Block6m_dataE"><code class="docutils literal notranslate"><span class="pre">m_data</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="structTestBlockchain_1_1Block.html#_CPPv4N14TestBlockchain5Block6HeaderE"><code class="docutils literal notranslate"><span class="pre">TestBlockchain::Block::Header</span></code></a><ul>
+<li class="toctree-l5"><a class="reference internal" href="structTestBlockchain_1_1Block.html#_CPPv4NK14TestBlockchain5Block6Header4dataEv"><code class="docutils literal notranslate"><span class="pre">data()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="structTestBlockchain_1_1Block.html#_CPPv4N14TestBlockchain5Block6Header9m_versionE"><code class="docutils literal notranslate"><span class="pre">m_version</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="structTestBlockchain_1_1Block.html#_CPPv4N14TestBlockchain5Block6Header6m_prevE"><code class="docutils literal notranslate"><span class="pre">m_prev</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="structTestBlockchain_1_1Block.html#_CPPv4N14TestBlockchain5Block6Header10m_txn_rootE"><code class="docutils literal notranslate"><span class="pre">m_txn_root</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="structTestBlockchain_1_1Block.html#_CPPv4N14TestBlockchain5Block6Header11m_timestampE"><code class="docutils literal notranslate"><span class="pre">m_timestamp</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="structTestBlockchain_1_1Block.html#_CPPv4N14TestBlockchain5Block6Header8m_targetE"><code class="docutils literal notranslate"><span class="pre">m_target</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="structTestBlockchain_1_1Block.html#_CPPv4N14TestBlockchain5Block6Header7m_nonceE"><code class="docutils literal notranslate"><span class="pre">m_nonce</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="structTestBlockchain_1_1Block.html#_CPPv4N14TestBlockchain5Block6Header4sizeEv"><code class="docutils literal notranslate"><span class="pre">size()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="structTestBlockchain_1_1Block_1_1Header.html">Struct Block::Header</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="structTestBlockchain_1_1Block_1_1Header.html#nested-relationships">Nested Relationships</a></li>
+<li class="toctree-l2"><a class="reference internal" href="structTestBlockchain_1_1Block_1_1Header.html#struct-documentation">Struct Documentation</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="structTestBlockchain_1_1Block_1_1Header.html#_CPPv4N14TestBlockchain5Block6HeaderE"><code class="docutils literal notranslate"><span class="pre">TestBlockchain::Block::Header</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="structTestBlockchain_1_1Block_1_1Header.html#_CPPv4NK14TestBlockchain5Block6Header4dataEv"><code class="docutils literal notranslate"><span class="pre">data()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="structTestBlockchain_1_1Block_1_1Header.html#_CPPv4N14TestBlockchain5Block6Header9m_versionE"><code class="docutils literal notranslate"><span class="pre">m_version</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="structTestBlockchain_1_1Block_1_1Header.html#_CPPv4N14TestBlockchain5Block6Header6m_prevE"><code class="docutils literal notranslate"><span class="pre">m_prev</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="structTestBlockchain_1_1Block_1_1Header.html#_CPPv4N14TestBlockchain5Block6Header10m_txn_rootE"><code class="docutils literal notranslate"><span class="pre">m_txn_root</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="structTestBlockchain_1_1Block_1_1Header.html#_CPPv4N14TestBlockchain5Block6Header11m_timestampE"><code class="docutils literal notranslate"><span class="pre">m_timestamp</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="structTestBlockchain_1_1Block_1_1Header.html#_CPPv4N14TestBlockchain5Block6Header8m_targetE"><code class="docutils literal notranslate"><span class="pre">m_target</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="structTestBlockchain_1_1Block_1_1Header.html#_CPPv4N14TestBlockchain5Block6Header7m_nonceE"><code class="docutils literal notranslate"><span class="pre">m_nonce</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="structTestBlockchain_1_1Block_1_1Header.html#_CPPv4N14TestBlockchain5Block6Header4sizeEv"><code class="docutils literal notranslate"><span class="pre">size()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="classbconcat_1_1TrivialConcatenator.html">Class TrivialConcatenator</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="classbconcat_1_1TrivialConcatenator.html#class-documentation">Class Documentation</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="classbconcat_1_1TrivialConcatenator.html#_CPPv4N7bconcat19TrivialConcatenatorE"><code class="docutils literal notranslate"><span class="pre">bconcat::TrivialConcatenator</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="classbconcat_1_1TrivialConcatenator.html#_CPPv4IDpENK7bconcat19TrivialConcatenatorclEDaDpRR4Args"><code class="docutils literal notranslate"><span class="pre">operator()()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="classbconcat_1_1TrivialConcatenator.html#_CPPv4N7bconcat19TrivialConcatenator6concatEDpRRDa"><code class="docutils literal notranslate"><span class="pre">concat()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="classbconcat_1_1UnifiedConcatenator.html">Class UnifiedConcatenator</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="classbconcat_1_1UnifiedConcatenator.html#class-documentation">Class Documentation</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="classbconcat_1_1UnifiedConcatenator.html#_CPPv4N7bconcat19UnifiedConcatenatorE"><code class="docutils literal notranslate"><span class="pre">bconcat::UnifiedConcatenator</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="classbconcat_1_1UnifiedConcatenator.html#_CPPv4N7bconcat19UnifiedConcatenator10value_typeE"><code class="docutils literal notranslate"><span class="pre">value_type</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="classbconcat_1_1UnifiedConcatenator.html#_CPPv4IDpENK7bconcat19UnifiedConcatenatorclEDaDpRR4Args"><code class="docutils literal notranslate"><span class="pre">operator()()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="classbconcat_1_1UnifiedConcatenator.html#_CPPv4I0EN7bconcat19UnifiedConcatenator6appendEvR10value_typeRR1T"><code class="docutils literal notranslate"><span class="pre">append()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="classbconcat_1_1UnifiedConcatenator.html#_CPPv4IDpEN7bconcat19UnifiedConcatenator6concatEDaDpRR4Args"><code class="docutils literal notranslate"><span class="pre">concat()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="classHashRNG.html">Template Class HashRNG</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="classHashRNG.html#class-documentation">Class Documentation</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="classHashRNG.html#_CPPv4I000E7HashRNG"><code class="docutils literal notranslate"><span class="pre">HashRNG</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="classHashRNG.html#_CPPv4N7HashRNG7HashRNGEv"><code class="docutils literal notranslate"><span class="pre">HashRNG()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="classHashRNG.html#_CPPv4N7HashRNG7HashRNGERKNSt6stringE6Hasher12Concatenator"><code class="docutils literal notranslate"><span class="pre">HashRNG()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="classHashRNG.html#_CPPv4N7HashRNG4nextEv"><code class="docutils literal notranslate"><span class="pre">next()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="classHashRNG.html#_CPPv4N7HashRNGclEv"><code class="docutils literal notranslate"><span class="pre">operator()()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="classTestBlockchain_1_1Miner.html">Class TestBlockchain::Miner</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="classTestBlockchain_1_1Miner.html#nested-relationships">Nested Relationships</a></li>
+<li class="toctree-l2"><a class="reference internal" href="classTestBlockchain_1_1Miner.html#class-documentation">Class Documentation</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="classTestBlockchain_1_1Miner.html#_CPPv4N14TestBlockchain5MinerE"><code class="docutils literal notranslate"><span class="pre">TestBlockchain::Miner</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="classTestBlockchain_1_1Miner.html#_CPPv4N14TestBlockchain5Miner5MinerEP14TestBlockchainI6Hasher4HashE"><code class="docutils literal notranslate"><span class="pre">Miner()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="classTestBlockchain_1_1Miner.html#_CPPv4N14TestBlockchain5Miner4mineEv"><code class="docutils literal notranslate"><span class="pre">mine()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="classTestBlockchain_1_1Transaction.html">Class TestBlockchain::Transaction</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="classTestBlockchain_1_1Transaction.html#nested-relationships">Nested Relationships</a></li>
+<li class="toctree-l2"><a class="reference internal" href="classTestBlockchain_1_1Transaction.html#class-documentation">Class Documentation</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="classTestBlockchain_1_1Transaction.html#_CPPv4N14TestBlockchain11TransactionE"><code class="docutils literal notranslate"><span class="pre">TestBlockchain::Transaction</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="classTestBlockchain_1_1Transaction.html#_CPPv4IDpEN14TestBlockchain11Transaction11TransactionEN7schnorr11signature_tEDpRR4Args"><code class="docutils literal notranslate"><span class="pre">Transaction()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="classTestBlockchain_1_1Transaction.html#_CPPv4NK14TestBlockchain11Transaction8get_signEv"><code class="docutils literal notranslate"><span class="pre">get_sign()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="classTestBlockchain_1_1Transaction.html#_CPPv4N14TestBlockchain11Transaction5bytesEv"><code class="docutils literal notranslate"><span class="pre">bytes()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="classTestBlockchain_1_1Transaction.html#_CPPv4NK14TestBlockchain11Transaction5bytesEv"><code class="docutils literal notranslate"><span class="pre">bytes()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="classTestBlockchain_1_1Transaction.html#_CPPv4N14TestBlockchain11Transaction5beginEv"><code class="docutils literal notranslate"><span class="pre">begin()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="classTestBlockchain_1_1Transaction.html#_CPPv4N14TestBlockchain11Transaction3endEv"><code class="docutils literal notranslate"><span class="pre">end()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="classTestBlockchain_1_1Wallet.html">Class TestBlockchain::Wallet</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="classTestBlockchain_1_1Wallet.html#nested-relationships">Nested Relationships</a></li>
+<li class="toctree-l2"><a class="reference internal" href="classTestBlockchain_1_1Wallet.html#class-documentation">Class Documentation</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="classTestBlockchain_1_1Wallet.html#_CPPv4N14TestBlockchain6WalletE"><code class="docutils literal notranslate"><span class="pre">TestBlockchain::Wallet</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="classTestBlockchain_1_1Wallet.html#_CPPv4N14TestBlockchain6Wallet6WalletEP14TestBlockchainI6Hasher4HashE6Signer"><code class="docutils literal notranslate"><span class="pre">Wallet()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="classTestBlockchain_1_1Wallet.html#_CPPv4NK14TestBlockchain6Wallet7addressEv"><code class="docutils literal notranslate"><span class="pre">address()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="classTestBlockchain_1_1Wallet.html#_CPPv4N14TestBlockchain6Wallet4sendERKNSt6stringE"><code class="docutils literal notranslate"><span class="pre">send()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</section>
+<section id="functions">
+<h3>Functions<a class="headerlink" href="#functions" title="Link to this heading"></a></h3>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_blockchain_8hpp_1a8c002417c93269398765c264333ea23c.html">Function data</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_blockchain_8hpp_1a8c002417c93269398765c264333ea23c.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_blockchain_8hpp_1a2c7ad6354fdf518deece60214b2f7be7.html">Template Function operator&lt;&lt;</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_blockchain_8hpp_1a2c7ad6354fdf518deece60214b2f7be7.html#function-documentation">Function Documentation</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="function_blockchain_8hpp_1a2c7ad6354fdf518deece60214b2f7be7.html#_CPPv4I0_NSt6size_tEElsRNSt7ostreamERNSt7ostreamERKNSt5arrayI1T1NEE"><code class="docutils literal notranslate"><span class="pre">operator&lt;&lt;()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_blockchain_8hpp_1a3afc276b4d98c2c32e7c376b58578ad8.html">Function size</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_blockchain_8hpp_1a3afc276b4d98c2c32e7c376b58578ad8.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</section>
+<section id="variables">
+<h3>Variables<a class="headerlink" href="#variables" title="Link to this heading"></a></h3>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="variable_blockchain_8hpp_1ac39898772839ccf08db26826bf2287dd.html">Variable m_nonce</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="variable_blockchain_8hpp_1ac39898772839ccf08db26826bf2287dd.html#variable-documentation">Variable Documentation</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="variable_blockchain_8hpp_1ac39898772839ccf08db26826bf2287dd.html#_CPPv4N14TestBlockchain5Block6Header7m_nonceE"><code class="docutils literal notranslate"><span class="pre">m_nonce</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="variable_blockchain_8hpp_1aa8e84c3aee99ed247805dcd225a8436c.html">Variable m_prev</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="variable_blockchain_8hpp_1aa8e84c3aee99ed247805dcd225a8436c.html#variable-documentation">Variable Documentation</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="variable_blockchain_8hpp_1aa8e84c3aee99ed247805dcd225a8436c.html#_CPPv4N14TestBlockchain5Block6Header6m_prevE"><code class="docutils literal notranslate"><span class="pre">m_prev</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="variable_blockchain_8hpp_1a34a82969482f4a35e7ed83731cd33cfb.html">Variable m_target</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="variable_blockchain_8hpp_1a34a82969482f4a35e7ed83731cd33cfb.html#variable-documentation">Variable Documentation</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="variable_blockchain_8hpp_1a34a82969482f4a35e7ed83731cd33cfb.html#_CPPv4N14TestBlockchain5Block6Header8m_targetE"><code class="docutils literal notranslate"><span class="pre">m_target</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="variable_blockchain_8hpp_1ad0dd4ef0918482e79e657191a8567b6f.html">Variable m_timestamp</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="variable_blockchain_8hpp_1ad0dd4ef0918482e79e657191a8567b6f.html#variable-documentation">Variable Documentation</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="variable_blockchain_8hpp_1ad0dd4ef0918482e79e657191a8567b6f.html#_CPPv4N14TestBlockchain5Block6Header11m_timestampE"><code class="docutils literal notranslate"><span class="pre">m_timestamp</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="variable_blockchain_8hpp_1a068a2f13d61dc01ca0d90e3f5d37b465.html">Variable m_txn_root</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="variable_blockchain_8hpp_1a068a2f13d61dc01ca0d90e3f5d37b465.html#variable-documentation">Variable Documentation</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="variable_blockchain_8hpp_1a068a2f13d61dc01ca0d90e3f5d37b465.html#_CPPv4N14TestBlockchain5Block6Header10m_txn_rootE"><code class="docutils literal notranslate"><span class="pre">m_txn_root</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="variable_blockchain_8hpp_1a0d6124b18fa39209bf51ec6407fa7c0f.html">Variable m_version</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="variable_blockchain_8hpp_1a0d6124b18fa39209bf51ec6407fa7c0f.html#variable-documentation">Variable Documentation</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="variable_blockchain_8hpp_1a0d6124b18fa39209bf51ec6407fa7c0f.html#_CPPv4N14TestBlockchain5Block6Header9m_versionE"><code class="docutils literal notranslate"><span class="pre">m_version</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</section>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="../examples.html" class="btn btn-neutral float-left" title="Proof-of-Work Example" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="namespace_bconcat.html" class="btn btn-neutral float-right" title="Namespace bconcat" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2025, gdaneek.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

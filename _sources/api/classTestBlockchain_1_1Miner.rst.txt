@@ -1,0 +1,23 @@
+.. _exhale_class_classTestBlockchain_1_1Miner:
+
+Class TestBlockchain::Miner
+===========================
+
+- Defined in :ref:`file_blockchain_blockchain.hpp`
+
+
+Nested Relationships
+--------------------
+
+This class is a nested type of :ref:`exhale_struct_structTestBlockchain`.
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: TestBlockchain::Miner
+   :project: My C++ Project
+   :members:
+   :protected-members:
+   :undoc-members:

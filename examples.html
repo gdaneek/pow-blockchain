@@ -1,0 +1,199 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Proof-of-Work Example &mdash; pow-blockchain 1.0.0 documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="_static/collapsible-lists/css/tree_view.css?v=a885cde7" />
+
+  
+      <script src="_static/jquery.js?v=5d32c60e"></script>
+      <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="_static/documentation_options.js?v=8d563738"></script>
+      <script src="_static/doctools.js?v=9bcbadda"></script>
+      <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="_static/collapsible-lists/js/CollapsibleLists.compressed.js?v=73120307"></script>
+      <script src="_static/collapsible-lists/js/apply-collapsible-lists.js?v=660e4f45"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="API Reference" href="api/library_root.html" />
+    <link rel="prev" title="Proof-of-Work Blockchain Module" href="modules/pow.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            pow-blockchain
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Table of contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="quick.html">Quick start</a></li>
+<li class="toctree-l1"><a class="reference internal" href="modules/index.html">Modules</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Examples</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#overview">Overview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#execution-flow">Execution Flow</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#console-output">Console output</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#summary">Summary</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="api/library_root.html">API Reference</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">pow-blockchain</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Proof-of-Work Example</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/examples.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="proof-of-work-example">
+<h1>Proof-of-Work Example<a class="headerlink" href="#proof-of-work-example" title="Link to this heading"></a></h1>
+<section id="overview">
+<h2>Overview<a class="headerlink" href="#overview" title="Link to this heading"></a></h2>
+<p>The <cite>pow.cc</cite> example demonstrates the complete functionality of the blockchain system, showcasing how cryptographic components interact to form a working proof-of-work chain. It simulates the full lifecycle from transaction creation to mining and chain extension.</p>
+</section>
+<section id="execution-flow">
+<h2>Execution Flow<a class="headerlink" href="#execution-flow" title="Link to this heading"></a></h2>
+<ol class="arabic simple">
+<li><p><strong>Initialize Wallet and Transactions</strong></p>
+<ul class="simple">
+<li><p>A new wallet is created, generating a fresh Schnorr key pair.</p></li>
+<li><p>Five transaction files (<cite>t1.txn</cite> through <cite>t5.txn</cite>) are loaded.</p></li>
+<li><p>Each file’s content is wrapped into a <cite>Transaction</cite> object and signed by the wallet.</p></li>
+<li><p>The result is a list of signed transactions ready for submission.</p></li>
+</ul>
+</li>
+<li><p><strong>Submit Transactions to Blockchain</strong></p>
+<ul class="simple">
+<li><p>The blockchain module verifies each transaction’s Schnorr signature.</p></li>
+<li><p>Valid transactions are accepted into the transaction pool.</p></li>
+<li><p>Output confirms whether each transaction was accepted or rejected.</p></li>
+</ul>
+</li>
+<li><p><strong>Create a Miner</strong></p>
+<ul class="simple">
+<li><p>A <cite>Miner</cite> instance is initialized.</p></li>
+<li><p>It will later be responsible for gathering verified transactions and mining a new block.</p></li>
+</ul>
+</li>
+<li><p><strong>Mining a Block</strong></p>
+<ul class="simple">
+<li><p>The miner pulls pending transactions (all five signed earlier).</p></li>
+<li><p>A candidate block is assembled, and its Merkle root is computed.</p></li>
+<li><p>The miner begins a proof-of-work loop: trying different nonce values and hashing the block header.</p></li>
+<li><p>The difficulty target (e.g. 5 leading zero bits in hash) is enforced during this loop.</p></li>
+</ul>
+</li>
+<li><p><strong>Block Found</strong></p>
+<ul class="simple">
+<li><p>Once a nonce is found that meets the difficulty condition, a valid block is formed.</p></li>
+<li><p>The block is appended to the blockchain.</p></li>
+<li><p>Its transactions are considered confirmed and removed from the pool.</p></li>
+</ul>
+</li>
+<li><p><strong>Output the Blockchain State</strong></p>
+<ul class="simple">
+<li><p>The program prints the blockchain contents:
+- <strong>Genesis Block</strong> (Block 0): Initialized with all-zero header.
+- <strong>Block 1</strong>: Newly mined block with header fields (version, previous hash, Merkle root, timestamp, target, nonce).</p></li>
+<li><p>The link between Block 1 and the genesis block is confirmed by matching the previous-hash field.</p></li>
+</ul>
+</li>
+<li><p><strong>Verify Proof-of-Work</strong></p>
+<ul class="simple">
+<li><p>The hash of the block header is displayed.</p></li>
+<li><p>The binary representation of the first byte is checked to ensure it satisfies the required number of leading zero bits.</p></li>
+<li><p>This confirms that the block meets the difficulty threshold and is valid.</p></li>
+</ul>
+</li>
+</ol>
+</section>
+<section id="console-output">
+<h2>Console output<a class="headerlink" href="#console-output" title="Link to this heading"></a></h2>
+<p>The first part of the output is transaction logs and shows which wallets were created and their activity (sent transactions, blockchain-verified transactions, etc).</p>
+<img alt="_images/pow_example_1.png" src="_images/pow_example_1.png" />
+<p>The second part of the output shows the structure of the blockchain after the successful addition of a new block, including the genesis block.</p>
+<img alt="_images/pow_example_2.png" src="_images/pow_example_2.png" />
+</section>
+<section id="summary">
+<h2>Summary<a class="headerlink" href="#summary" title="Link to this heading"></a></h2>
+<p>The example highlights full system integration:</p>
+<ul class="simple">
+<li><p>A <strong>Wallet</strong> creates and signs transactions.</p></li>
+<li><p>The <strong>Blockchain</strong> validates them and organizes block data.</p></li>
+<li><p>A <strong>Miner</strong> assembles transactions, computes Merkle roots, and mines new blocks via a proof-of-work algorithm.</p></li>
+<li><p>The output serves as a live trace confirming correct operation of signature validation, hashing, Merkle tree generation, and PoW enforcement.</p></li>
+</ul>
+<p>This file is especially useful for understanding how modular components (signatures, hashing, Merkle trees, mining) cooperate in a functioning blockchain.</p>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="modules/pow.html" class="btn btn-neutral float-left" title="Proof-of-Work Blockchain Module" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="api/library_root.html" class="btn btn-neutral float-right" title="API Reference" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2025, gdaneek.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

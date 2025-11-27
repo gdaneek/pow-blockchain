@@ -1,0 +1,14 @@
+.. _exhale_variable_blockchain_8hpp_1a068a2f13d61dc01ca0d90e3f5d37b465:
+
+Variable m_txn_root
+===================
+
+- Defined in :ref:`file_blockchain_blockchain.hpp`
+
+
+Variable Documentation
+----------------------
+
+
+.. doxygenvariable:: m_txn_root
+   :project: My C++ Project

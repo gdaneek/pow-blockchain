@@ -1,0 +1,17 @@
+.. _exhale_class_classHashRNG:
+
+Template Class HashRNG
+======================
+
+- Defined in :ref:`file_blockchain_prng.hpp`
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: HashRNG
+   :project: My C++ Project
+   :members:
+   :protected-members:
+   :undoc-members:
