@@ -1,5 +1,13 @@
 # Proof-of-Work Blockchain
 
+
+![Consensus](https://img.shields.io/badge/Consensus-PoW-345DFF?style=flat&labelColor=333a41)
+![C++20](https://img.shields.io/badge/Code-C++20-8E54E9?style=flat&labelColor=333a41)
+![Google Code Style](https://img.shields.io/badge/Style-Google-7A3DE1?style=flat&labelColor=333a41)
+[![Deploy Pages](https://github.com/gdaneek/pow-blockchain/actions/workflows/pages.yml/badge.svg?)](https://github.com/gdaneek/pow-blockchain/actions/workflows/pages.yml)
+[![GitHub license](https://img.shields.io/badge/License-MIT-3CB6C8?style=flat&labelColor=333a41)](https://github.com/gdaneek/pow-blockchain/blob/master/LICENSE)
+
+
 This project is a modular demonstration of a blockchain consensus system using **Proof-of-Work (PoW)**, written entirely in modern **C++20**. It showcases how cryptographic primitives like hash functions, Merkle trees, and digital signatures come together to build a minimal blockchain from scratch.
 
 You can use this project to:
@@ -15,11 +23,11 @@ This system is split into small, focused C++ modules (managed via Git submodules
 
 | Module             | Purpose |
 |--------------------|---------|
-| **streebog-hash/**     | Implements the Streebog (GOST R 34.11-2018) hash function |
-| **merkle-tree/**       | Generic Merkle tree to hash transaction batches |
-| **schnorr-sign/**      | Schnorr digital signature system with key-prefixing |
-| **pow-blockchain/**    | Core blockchain logic: blocks, transactions, mining |
-| **examples/pow.cc**    | CLI demo that ties it all together – generate txs, mine blocks |
+| **external/streebog-hash/** | Implements the Streebog (GOST R 34.11-2018) hash function |
+| **external/merkle-tree/** | Generic Merkle tree to hash transaction batches |
+| **external/schnorr-sign/** | Schnorr digital signature system with key-prefixing |
+| **blockchain/** | Core blockchain logic: blocks, transactions, mining |
+| **examples/pow.cc** | CLI demo that ties it all together – generate txs, mine blocks |
 
 Each module is a standalone, testable CMake library and can be reused independently.
 
@@ -110,4 +118,4 @@ HTML documentation will appear in `docs/build/html`.
 
 ## ⚖️ License
 
-This project is licensed under the MIT License – see the `LICENSE` file for details.
+This project is licensed under the MIT License – see the [LICENSE](LICENSE) file for details.
