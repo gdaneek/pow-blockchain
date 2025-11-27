@@ -1,7 +1,5 @@
 # Proof-of-Work Blockchain
 
-## 🚀 Overview
-
 This project is a modular demonstration of a blockchain consensus system using **Proof-of-Work (PoW)**, written entirely in modern **C++20**. It showcases how cryptographic primitives like hash functions, Merkle trees, and digital signatures come together to build a minimal blockchain from scratch.
 
 You can use this project to:
@@ -11,7 +9,7 @@ You can use this project to:
 
 ---
 
-## 🧩 What's Inside?
+## 🚀 Overview
 
 This system is split into small, focused C++ modules (managed via Git submodules):
 
