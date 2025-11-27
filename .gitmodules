@@ -1,9 +1,0 @@
-[submodule "external/streebog"]
-	path = external/streebog
-	url = https://github.com/gdaneek/GOST-34.11-2018.git
-[submodule "external/merkle"]
-	path = external/merkle
-	url = https://github.com/gdaneek/MerkleTree.git
-[submodule "external/schnorr"]
-	path = external/schnorr
-	url = https://github.com/gdaneek/schnorr-sign.git
