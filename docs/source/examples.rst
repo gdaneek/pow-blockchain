@@ -53,6 +53,18 @@ Execution Flow
    - The binary representation of the first byte is checked to ensure it satisfies the required number of leading zero bits.
    - This confirms that the block meets the difficulty threshold and is valid.
 
+
+Console output
+--------------
+
+The first part of the output is transaction logs and shows which wallets were created and their activity (sent transactions, blockchain-verified transactions, etc).
+
+.. image:: images/pow_example_1.png
+
+The second part of the output shows the structure of the blockchain after the successful addition of a new block, including the genesis block.
+
+.. image:: images/pow_example_2.png
+
 Summary
 -------
 
