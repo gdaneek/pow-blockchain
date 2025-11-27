@@ -1,11 +1,10 @@
 # Proof-of-Work Blockchain
 
-
-![Consensus](https://img.shields.io/badge/Consensus-PoW-345DFF?style=flat&labelColor=333a41)
-![C++20](https://img.shields.io/badge/Code-C++20-8E54E9?style=flat&labelColor=333a41)
-![Google Code Style](https://img.shields.io/badge/Style-Google-7A3DE1?style=flat&labelColor=333a41)
+![Consensus](https://img.shields.io/badge/Consensus-PoW-7E57C2?style=flat&labelColor=333a41)
+![C++20](https://img.shields.io/badge/Code-C++20-FF7043?style=flat&labelColor=333a41)
+![Google Code Style](https://img.shields.io/badge/Style-Google-29B6F6?style=flat&labelColor=333a41)
 [![Deploy Pages](https://github.com/gdaneek/pow-blockchain/actions/workflows/pages.yml/badge.svg?)](https://github.com/gdaneek/pow-blockchain/actions/workflows/pages.yml)
-[![GitHub license](https://img.shields.io/badge/License-MIT-3CB6C8?style=flat&labelColor=333a41)](https://github.com/gdaneek/pow-blockchain/blob/master/LICENSE)
+[![GitHub license](https://img.shields.io/badge/License-MIT-66BB6A?style=flat&labelColor=333a41)](https://github.com/gdaneek/pow-blockchain/blob/master/LICENSE)
 
 
 This project is a modular demonstration of a blockchain consensus system using **Proof-of-Work (PoW)**, written entirely in modern **C++20**. It showcases how cryptographic primitives like hash functions, Merkle trees, and digital signatures come together to build a minimal blockchain from scratch.
